@@ -8,13 +8,13 @@ import 'package:googlemapsentry/start/app_bars/listbaricons.dart';
 import 'package:googlemapsentry/start/app_bars/radialbar.dart';
 
 class AppSetup extends StatefulWidget {
-  AppSetup({Key? key}) : super(key: key);
+  const AppSetup({Key? key}) : super(key: key);
 
   @override
-  _AppSetupState createState() => _AppSetupState();
+  AppSetupState createState() => AppSetupState();
 }
 
-class _AppSetupState extends State<AppSetup> {
+class AppSetupState extends State<AppSetup> {
   int selectedpage = 0;
 
   final _pageOptions = const [
