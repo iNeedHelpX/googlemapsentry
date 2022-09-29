@@ -28,18 +28,18 @@ AppBar myRadialBar(BuildContext context) {
     ),
     //set size of appbar. This is sort of big
     bottom: PreferredSize(
-      preferredSize: Size.fromHeight(100),
+      preferredSize: const Size.fromHeight(100),
       child: Stack(
         children: [
           Text(
-            "Swoon!",
+            "Map",
             style: GoogleFonts.damion(
               color: lightgoldbg,
               fontWeight: FontWeight.w800,
               fontSize: 65,
               shadows: [
                 Shadow(
-                  offset: Offset(8, 8.0),
+                  offset: const Offset(8, 8.0),
                   blurRadius: 17.0,
                   color: fill2.withOpacity(0.6),
                 )
