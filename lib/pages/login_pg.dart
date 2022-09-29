@@ -3,6 +3,7 @@ import 'package:flutter_gradients_reborn/flutter_gradients_reborn.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:googlemapsentry/colors/colours_list.dart';
+import 'package:googlemapsentry/globalvars.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -54,7 +55,7 @@ class LoginPage extends StatelessWidget {
                           Buttons.GoogleDark,
                           onPressed: () {
                             //sign in logic goes here
-                            // loginController.googleLogin();
+                            loginController.googleLogin();
                           },
                         )
                       ],
