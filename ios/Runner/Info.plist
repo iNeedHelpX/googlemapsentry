@@ -56,5 +56,7 @@
 			</array>
 		</dict>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This app needs permission to use your location</string>
 </dict>
 </plist>
