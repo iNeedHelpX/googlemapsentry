@@ -11,7 +11,7 @@ class SplashScreen extends StatelessWidget {
       decoration: BoxDecoration(
           gradient: FlutterGradients.confidentCloud(
         type: GradientType.linear,
-        tileMode: TileMode.values[0],
+        tileMode: TileMode.clamp,
       )),
       child: Center(
         child: Column(

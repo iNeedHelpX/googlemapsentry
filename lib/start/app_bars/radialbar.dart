@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:googlemapsentry/colors/bluepurple_gradient.dart';
+import 'package:flutter_gradients_reborn/flutter_gradients_reborn.dart';
 import 'package:googlemapsentry/colors/colours_list.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -14,7 +14,7 @@ AppBar myRadialBar(BuildContext context) {
       ),
       child: Container(
         decoration: BoxDecoration(
-          gradient: bluePurpleGrad(),
+          gradient: FlutterGradients.premiumDark(tileMode: TileMode.clamp),
         ),
       ),
     ),
@@ -32,7 +32,7 @@ AppBar myRadialBar(BuildContext context) {
       child: Stack(
         children: [
           Text(
-            "Map",
+            "Coffee Society",
             style: GoogleFonts.damion(
               color: lightgoldbg,
               fontWeight: FontWeight.w800,

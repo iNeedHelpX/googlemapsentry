@@ -14,7 +14,7 @@ class LoginPage extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: FlutterGradients.confidentCloud(
           type: GradientType.linear,
-          tileMode: TileMode.values[0],
+          tileMode: TileMode.clamp,
         ),
       ),
       child: Stack(
@@ -39,7 +39,7 @@ class LoginPage extends StatelessWidget {
                           "No need to register. Just sign in with Google!",
                           //style info next
                           style: GoogleFonts.fjallaOne(
-                            color: brighty,
+                            color: textgreyblue,
                             fontSize: 30,
                             fontWeight: FontWeight.w500,
                           ),

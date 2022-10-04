@@ -53,6 +53,7 @@ dependencies:
   google_sign_in: ^5.4.2
   uuid: ^3.0.6
   google_maps_flutter: ^2.2.1
+  rapyd: ^0.1.5
 
 dev_dependencies:
   flutter_test:
