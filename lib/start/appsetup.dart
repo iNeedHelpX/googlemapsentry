@@ -44,7 +44,7 @@ class AppSetupState extends State<AppSetup> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: bg,
+      backgroundColor: lightgoldbg,
       extendBodyBehindAppBar: true,
       appBar: myRadialBar(context),
       body: _pageOptions[selectedpage],

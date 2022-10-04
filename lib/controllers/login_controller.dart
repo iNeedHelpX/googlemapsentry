@@ -15,7 +15,7 @@ class LoginController extends GetxController {
   final googleSignIn = GoogleSignIn();
   RxBool isLoggedIn = false.obs;
   Rx<UserModel> userModel = UserModel().obs;
-  String usersCollection = "weedusers";
+  String usersCollection = "coffeeusers";
   // Rx<UserModel> usrModel = UserModel().obs;
 
   GoogleSignInAccount? _googleAcc;
@@ -33,15 +33,10 @@ class LoginController extends GetxController {
 
   setInitialScreen(User? user) {
     if (user == null) {
-      if (kDebugMode) {
-        print("going to login page...");
-      }
+      print("going to login page...");
       Get.offAll(() => LoginPage());
-    }
-    if (user != null) {
-      if (kDebugMode) {
-        print("The user is ${user.displayName}");
-      }
+    } else {
+      print("The user is ${user.displayName}");
       userModel.bindStream(listenToUser());
       Get.offAll(() => AppSetup());
     }
