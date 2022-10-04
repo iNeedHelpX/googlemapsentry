@@ -46,3 +46,7 @@ app.*.map.json
 
 #ios related
 /ios/Runner/AppDelegate.swift
+
+#rapyd and other payments related
+/lib/config/
+/lib/config/config.dart
