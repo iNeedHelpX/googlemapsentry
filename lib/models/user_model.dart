@@ -23,11 +23,11 @@ class UserModel {
   });
 
   UserModel.fromSnapshot(DocumentSnapshot<Map<String, dynamic>> snapshot) {
-    name = snapshot.data()!['NAME'] ?? '';
-    email = snapshot.data()!['EMAIL'] ?? '';
-    photoURL = snapshot.data()!['PHOTOURL'] ?? '';
-    id = snapshot.data()!['ID'] ?? '';
-    cart = _convertCartItems(snapshot.data()!['CART'] ?? []);
+    name = snapshot.data()?['NAME'] ?? '';
+    email = snapshot.data()?['EMAIL'] ?? '';
+    photoURL = snapshot.data()?['PHOTOURL'] ?? '';
+    id = snapshot.data()?['ID'] ?? '';
+    cart = _convertCartItems(snapshot.data()?['CART'] ?? []);
   }
 
   List<CartItemModel> _convertCartItems(List cartFomDb) {

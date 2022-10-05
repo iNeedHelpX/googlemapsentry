@@ -93,14 +93,14 @@ class LoginController extends GetxController {
 
   Stream<UserModel> listenToUser() => firebaseFirestore
       .collection(usersCollection)
-      .doc(fbUser.value!.uid)
+      .doc(fbUser.value!.displayName)
       .snapshots()
       .map((snapshot) => UserModel.fromSnapshot(snapshot));
 
   _addUserToFB(UserModel usr, User firebaseUser) {
     firebaseFirestore.collection(usersCollection).doc().set({
       "displayName": usr.name,
-      "uid": usr.id,
+      "id": usr.id,
       "photoURL": usr.photoURL,
       "email": usr.email,
       "cart": usr.cart
