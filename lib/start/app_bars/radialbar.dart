@@ -14,7 +14,7 @@ AppBar myRadialBar(BuildContext context) {
       ),
       child: Container(
         decoration: BoxDecoration(
-          gradient: FlutterGradients.premiumDark(tileMode: TileMode.clamp),
+          gradient: FlutterGradients.lilyMeadow(tileMode: TileMode.clamp),
         ),
       ),
     ),
@@ -34,9 +34,9 @@ AppBar myRadialBar(BuildContext context) {
           Text(
             "Coffee Society",
             style: GoogleFonts.damion(
-              color: lightgoldbg,
-              fontWeight: FontWeight.w800,
-              fontSize: 65,
+              color: Colors.white,
+              fontWeight: FontWeight.w500,
+              fontSize: 60,
               shadows: [
                 Shadow(
                   offset: const Offset(8, 8.0),

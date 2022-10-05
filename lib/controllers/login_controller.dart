@@ -16,7 +16,7 @@ class LoginController extends GetxController {
   RxBool isLoggedIn = false.obs;
   Rx<UserModel> userModel = UserModel().obs;
   String usersCollection = "coffeeusers";
-  // Rx<UserModel> usrModel = UserModel().obs;
+//  Rx<UserModel> usrModel = UserModel().obs;
 
   GoogleSignInAccount? _googleAcc;
   UserModel? _userModel;
@@ -34,11 +34,11 @@ class LoginController extends GetxController {
   setInitialScreen(User? user) {
     if (user == null) {
       print("going to login page...");
-      Get.offAll(() => LoginPage());
+      Get.offAll(() => const LoginPage());
     } else {
       print("The user is ${user.displayName}");
       userModel.bindStream(listenToUser());
-      Get.offAll(() => AppSetup());
+      Get.offAll(() => const AppSetup());
     }
   }
 
@@ -100,7 +100,7 @@ class LoginController extends GetxController {
   _addUserToFB(UserModel usr, User firebaseUser) {
     firebaseFirestore.collection(usersCollection).doc().set({
       "displayName": usr.name,
-      "id": usr.id,
+      "uid": usr.id,
       "photoURL": usr.photoURL,
       "email": usr.email,
       "cart": usr.cart
